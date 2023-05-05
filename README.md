@@ -10,7 +10,7 @@ npm run start
 
 The app should now be available at [http://localhost:3000](http://localhost:3000)!
 
-*Note: This app uses the Create React App Boilderplate.
+*Note: This app uses the Create React App Boilerplate.
 
 # Getting Started with Create React App
 
