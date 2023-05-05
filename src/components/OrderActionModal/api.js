@@ -45,7 +45,6 @@ const preprocessModalCardData = (data) => {
 
 const getModalCardData = async (orderId) => {
   const { data } = await axios.get(`/marketplace/orders/${orderId}`);
-  console.log(data);
   return preprocessModalCardData(data);
 };
 
