@@ -7,7 +7,10 @@ import { acceptSale, declineSale } from './api';
 import { useWindowSize } from '../../utils/hook';
 
 const OrderActionModalInfoStyles = {
-  ml: 2,
+  ml: {
+    xs: 0,
+    sm: 2
+  },
   width: {
     xs: '100%',
     sm: '40%',
