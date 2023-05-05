@@ -1,4 +1,4 @@
-import React, { memo, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, Typography, Avatar, Divider } from '@mui/material';
 import OrderActionModalCardListItem from './OrderActionModalCardList';
 import Spacer from '../common/Spacer';

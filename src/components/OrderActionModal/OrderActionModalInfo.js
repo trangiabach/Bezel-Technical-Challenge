@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
-import { Box, Typography, Stack, Button, Alert, Collapse } from '@mui/material';
+import { useState } from 'react';
+import { Box, Typography, Stack, Alert, Button } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
 import OrderActionModalCard from './OrderActionModalCard';
 import Spacer from '../common/Spacer';
@@ -108,7 +108,10 @@ const OrderActionModalInfo = ({ orderId, handleClose }) => {
       />
       <Stack direction="column" spacing={1} sx={buttonsLoadingBehaviorStyles}>
         {notification.msg ? (
-          <Alert severity={notification.severity}>{notification.msg}</Alert>
+          <>
+            <Alert severity={notification.severity}>{notification.msg}</Alert>
+            <Button onClick={() => setNotification({})}>Not sure? Decide again!</Button>
+          </>
         ) : (
           <>
             <LoadingButton

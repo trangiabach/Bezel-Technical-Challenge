@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
-import { ThemeProvider, Box, Button, CssBaseline } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import theme from './theme/theme';
 import OrderActionModalDemo from './pages/OrderActionModalDemo';
 

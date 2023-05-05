@@ -1,10 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Box, Button, Modal, Typography, Stack, Fade, Backdrop } from '@mui/material';
+import React from 'react';
+import { Box, Modal, Fade, Backdrop } from '@mui/material';
 import OrderActionModalCard from './OrderActionModalCard';
 import OrderActionModalInfo from './OrderActionModalInfo';
 import OrderActionModalCancelButton from './OrderActionModalCancelButton';
 import { useWindowSize } from '../../utils/hook';
-import { getModalCardData, acceptSale } from './api';
 import Spacer from '../common/Spacer';
 
 const OrderActionModal = ({ open, handleClose, orderId }) => {
