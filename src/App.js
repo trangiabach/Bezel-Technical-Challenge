@@ -11,6 +11,6 @@ const App = () => {
       <OrderActionModalDemo />
     </ThemeProvider>
   );
-}
+};
 
 export default App;

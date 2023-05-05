@@ -1,16 +1,14 @@
-
 @font-face {
   font-family: 'RiformaLLWeb-Light';
-  src: url('./assets/fonts/RiformaLLWeb-Light.woff2') format('woff2')
+  src: url('./assets/fonts/RiformaLLWeb-Light.woff2') format('woff2');
 }
-
 
 @font-face {
   font-family: 'RiformaLLWeb-Medium';
-  src: url('./assets/fonts/RiformaLLWeb-Medium.woff2') format('woff2')
+  src: url('./assets/fonts/RiformaLLWeb-Medium.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'RiformaLLWeb-Regular';
-  src: url('./assets/fonts/RiformaLLWeb-Regular.woff2') format('woff2')
+  src: url('./assets/fonts/RiformaLLWeb-Regular.woff2') format('woff2');
 }
