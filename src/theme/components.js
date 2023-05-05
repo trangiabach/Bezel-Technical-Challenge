@@ -1,7 +1,7 @@
 // Global style config for MUI components
 const COMPONENTS = {
   button: {
-    borderRadius: '20px',
+    borderRadius: '30px',
     padding: '1rem',
   },
   alert: {

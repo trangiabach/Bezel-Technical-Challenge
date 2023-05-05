@@ -110,7 +110,7 @@ const OrderActionModalInfo = ({ orderId, handleClose }) => {
         {notification.msg ? (
           <>
             <Alert severity={notification.severity}>{notification.msg}</Alert>
-            <Button onClick={() => setNotification({})}>Not sure? Decide again!</Button>
+            <Button sx={{ borderRadius: '30px' }} onClick={() => setNotification({})}>Not sure? Decide again!</Button>
           </>
         ) : (
           <>
