@@ -8,7 +8,7 @@ npm install
 npm run start
 ```
 
-The app should no be available at [http://localhost:3000](http://localhost:3000)!
+The app should now be available at [http://localhost:3000](http://localhost:3000)!
 
 *Note: This app uses the Create React App Boilderplate.
 
