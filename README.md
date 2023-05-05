@@ -1,3 +1,17 @@
+# Bezel-Technical-Challenge
+
+To run the app, do the following:
+
+```
+git clone https://github.com/trangiabach/Bezel-Technical-Challenge.git
+npm install
+npm run start
+```
+
+The app should no be available at [http://localhost:3000](http://localhost:3000)!
+
+*Note: This app uses the Create React App Boilderplate.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -69,6 +83,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-# Bezel-Technical-Challenge
-
-Bezel Technical Challenge
