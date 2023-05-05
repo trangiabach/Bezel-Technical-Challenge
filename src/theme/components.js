@@ -5,8 +5,8 @@ const COMPONENTS = {
     padding: '1rem',
   },
   alert: {
-    borderRadius: '30px',
-    padding: '0.5rem 1rem',
+    borderRadius: '50px',
+    padding: '0.5rem 2rem',
   },
 };
 
