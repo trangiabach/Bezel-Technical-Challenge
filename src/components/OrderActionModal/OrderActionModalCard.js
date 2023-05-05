@@ -75,7 +75,9 @@ const OrderActionModalCard = ({ orderId, sx }) => {
             </Typography>
           </Box>
           <Spacer x={2} />
-          <Avatar sx={OrderActionModalCardImgStyles} src={modalCardData.imgSrc}></Avatar>
+          <Avatar sx={OrderActionModalCardImgStyles} src={modalCardData.imgSrc}>
+            <img alt={modalCardData.title} src="https://getbezel.mo.cloudinary.net/static\bezel-nav-logo.png" />
+          </Avatar>
         </Box>
         <Spacer y={1} />
         <Divider />
