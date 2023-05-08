@@ -9,7 +9,7 @@ import { useWindowSize } from '../../utils/hook';
 const OrderActionModalInfoStyles = {
   ml: {
     xs: 0,
-    sm: 2
+    sm: 2,
   },
   width: {
     xs: '100%',
@@ -113,7 +113,9 @@ const OrderActionModalInfo = ({ orderId, handleClose }) => {
         {notification.msg ? (
           <>
             <Alert severity={notification.severity}>{notification.msg}</Alert>
-            <Button sx={{ borderRadius: '30px' }} onClick={() => setNotification({})}>Not sure? Decide again!</Button>
+            <Button sx={{ borderRadius: '30px' }} onClick={() => setNotification({})}>
+              Not sure? Decide again!
+            </Button>
           </>
         ) : (
           <>

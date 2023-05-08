@@ -10,7 +10,7 @@ npm run start
 
 The app should now be available at [http://localhost:3000](http://localhost:3000)!
 
-*Note: This app uses the Create React App Boilerplate.
+\*Note: This app uses the Create React App Boilerplate.
 
 # Getting Started with Create React App
 
@@ -82,4 +82,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-

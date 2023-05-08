@@ -1,16 +1,51 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Box, Modal, Fade, Backdrop } from '@mui/material';
 import OrderActionModalCard from './OrderActionModalCard';
 import OrderActionModalInfo from './OrderActionModalInfo';
 import OrderActionModalCancelButton from './OrderActionModalCancelButton';
-import { useWindowSize } from '../../utils/hook';
+import { useWindowSize, useElementSize } from '../../utils/hook';
 import Spacer from '../common/Spacer';
 
 const OrderActionModal = ({ open, handleClose, orderId }) => {
+  const modalContainerStyle = {
+    display: 'flex',
+    mx: {
+      xs: '1.5rem',
+      sm: '2.5rem',
+    },
+    my: {
+      xs: '1rem',
+      sm: '2rem',
+    },
+    mt: {
+      xs: '2rem',
+    },
+    justifyContent: 'space-between',
+    position: 'relative',
+    alignItems: 'center',
+    flexDirection: {
+      sm: 'row',
+      xs: 'column',
+    },
+  };
+
+  const { width, height } = useWindowSize();
+  const modalRef = useRef();
+  const modalSize = useElementSize(modalRef);
+  const [isModalHeightOverflow, setIsModalHeightOverflow] = useState(height);
+
+  useEffect(() => {
+    if (modalSize.height > height) {
+      setIsModalHeightOverflow(true);
+    } else {
+      setIsModalHeightOverflow(false);
+    }
+  }, [modalSize.height, height]);
+
   const modalStyle = {
     position: 'absolute',
     top: {
-      xs: 0,
+      xs: isModalHeightOverflow ? 0 : '',
       sm: '50%',
     },
     left: {
@@ -43,30 +78,6 @@ const OrderActionModal = ({ open, handleClose, orderId }) => {
     height: 'fit-content',
   };
 
-  const modalContainerStyle = {
-    display: 'flex',
-    mx: {
-      xs: '1.5rem',
-      sm: '2.5rem',
-    },
-    my: {
-      xs: '1rem',
-      sm: '2rem',
-    },
-    mt: {
-      xs: '2rem',
-    },
-    justifyContent: 'space-between',
-    position: 'relative',
-    alignItems: 'center',
-    flexDirection: {
-      sm: 'row',
-      xs: 'column',
-    },
-  };
-
-  const { width } = useWindowSize();
-
   return (
     <>
       <Modal
@@ -85,7 +96,7 @@ const OrderActionModal = ({ open, handleClose, orderId }) => {
         keepMounted
       >
         <Fade in={open}>
-          <Box sx={modalStyle}>
+          <Box sx={modalStyle} ref={modalRef}>
             <Box sx={modalContainerStyle}>
               <OrderActionModalInfo orderId={orderId} />
               <Spacer
