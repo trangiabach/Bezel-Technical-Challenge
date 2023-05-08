@@ -32,7 +32,7 @@ const OrderActionModal = ({ open, handleClose, orderId }) => {
   const { width, height } = useWindowSize();
   const modalRef = useRef();
   const modalSize = useElementSize(modalRef);
-  const [isModalHeightOverflow, setIsModalHeightOverflow] = useState(height);
+  const [isModalHeightOverflow, setIsModalHeightOverflow] = useState();
 
   useEffect(() => {
     if (modalSize.height > height) {

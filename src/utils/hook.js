@@ -35,9 +35,16 @@ const useElementSize = (elementRef) => {
   };
 
   useEffect(() => {
+    if (elementRef.current === undefined) {
+      return;
+    }
+    setElementSize({
+      width: elementRef.current.offsetWidth,
+      height: elementRef.current.offsetHeight,
+    });
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  }, [elementRef.current]);
 
   return elementSize;
 };
